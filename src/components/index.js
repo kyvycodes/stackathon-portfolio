@@ -6,9 +6,11 @@ import Particles from "react-particles-js"
 import {makeStyles} from "@material-ui/styles"
 import { AccountCircle } from '@material-ui/icons'
 
+
 const usedStyles = makeStyles({
   movingParticles: {
-    position: "absolute"
+    position: "absolute",
+    opacity: "0.3"
   }
 })
 

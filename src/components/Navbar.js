@@ -1,5 +1,6 @@
 import React, { useState } from 'react' //react hooks
 import { makeStyles } from '@material-ui/core/styles'; //changes material-ui's default styles
+import { Link } from "react-router-dom"
 import MobileRightMenuSlider from "@material-ui/core/Drawer" //custom name
 import {
   AppBar,
@@ -46,11 +47,13 @@ const usedStyles = makeStyles(theme => ({
 const menuItems = [
   {
     listIcon: <Home />,
-    listText: "Home"
+    listText: "Home",
+    listPath: "/"
   },
   {
     listIcon: <AssignmentInd />,
-    listText: "Resume"
+    listText: "Resume",
+    listPath: "/resume"
   },
   {
     listIcon: <Apps />,
@@ -83,7 +86,7 @@ const Navbar = () => {
     <List>
       {menuItems.map((listItem, key) => (
 
-      <ListItem button key={key}>
+      <ListItem button key={key} component={Link} to={listItem.listPath}>
         <ListItemIcon className={classes.listedItem}>
           {listItem.listIcon}
         </ListItemIcon>
