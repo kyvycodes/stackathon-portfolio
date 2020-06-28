@@ -11,7 +11,7 @@ import {
   Divider,
   List,
   Typography, //used for titles amd text
-  Box, //container specifys component
+  Box, //container specifies component
   Icon,
   ListItemIcon
 } from '@material-ui/core'
