@@ -44,11 +44,11 @@ const Header = () => {
       <Avatar className={classes.avatar} src={avatar} alt="Kay"/>
       </Grid>
       <Typography className={classes.title} variant="h4">
-        <Typed strings={["Kay Hardeman"]} typeSpeed={40}/>
+        <Typed strings={["KAY HARDEMAN"]} typeSpeed={40}/>
          </Typography>
          <br/>
          <Typography className={classes.subtitle} variant="h5">
-        <Typed strings={["Fill With Skills", "Fill With Skills", "Fill With Skills"]}
+        <Typed strings={["WEB DEVELOPER", "FULLSTACK ACADEMY STUDENT", "OPTIMIST"]}
         typeSpeed={40}
         backSpeed={60}
         loop

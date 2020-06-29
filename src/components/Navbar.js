@@ -24,13 +24,14 @@ import {
   ContactMail
 } from '@material-ui/icons'
 import avatar from '../avatar.png'
+import Footer from "./Footer"
 
 //CSS STYLING
 //classes
 const usedStyles = makeStyles(theme => ({
   menuSliderContainer: {
     width: 250,
-    background: "#511",
+    background: "#ffa386",
     height: "100%"
   },
   avatar: {
@@ -40,7 +41,7 @@ const usedStyles = makeStyles(theme => ({
     height: theme.spacing(13)
   },
   listedItem:{
-    color: "tan"
+    color: "#b7dcfb"
   }
 }))
 
@@ -109,13 +110,14 @@ const Navbar = () => {
           <ArrowBack style ={{color: "tomato"}}/>
          </IconButton>
          <Typography variant="h5" style= {{color: 'tan'}}>
-            Kays Portfolio
+            THIS WAY
          </Typography>
          <MobileRightMenuSlider
          anchor="right"
          open={state.right}
          onClose={toggleSlider('right', false)}>
            {sideList("right")}
+           <Footer/>
          </MobileRightMenuSlider>
 
        </Toolbar>

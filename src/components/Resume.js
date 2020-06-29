@@ -6,7 +6,7 @@ import Navbar from "./Navbar"
 //CSS STYLING WITH MATERIAL
 const usedStyles = makeStyles(theme => ({
   mainContainer: {
-    background: "#233"
+    background: "#ffa386"
   },
   timeLine: {
     position: "relative",
@@ -94,7 +94,7 @@ const usedStyles = makeStyles(theme => ({
     }
   },
   heading: {
-    color: "tomato",
+    color: "#b7dcfb",
     padding: "3rem 0",
     textTransform: "uppercase"
   },
@@ -112,10 +112,13 @@ const Resume = () => {
     <>
     <Navbar />
     <Box component="header" className= {classes.mainContainer}>
-      <Typography variant="h4" align="center" className={classes.heading}>
+      {/* <Typography variant="h4" align="center" className={classes.heading}>
         Working Experience
+      </Typography> */}
+      <Typography variant="h4" align="center" className={classes.heading}>
+        This page is a work in progress. Check out my projects instead !
       </Typography>
-      <Box component="div" className={classes.timeLine}>
+      {/* <Box component="div" className={classes.timeLine}>
         <Typography variant="h2"className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2013</Typography>
 
         <Box component="div" className={classes.timeLineItem}>
@@ -168,7 +171,7 @@ const Resume = () => {
             blah blah blah blah text
           </Typography>
         </Box>
-      </Box>
+      </Box> */}
       </Box>
    </>
   )
