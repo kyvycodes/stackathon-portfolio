@@ -57,11 +57,13 @@ const menuItems = [
   },
   {
     listIcon: <Apps />,
-    listText: "Portfolio"
+    listText: "Portfolio",
+    listPath: "/portfolio"
   },
   {
     listIcon: <ContactMail />,
-    listText: "Contacts"
+    listText: "Contacts",
+    listPath: "/contacts"
   }
 ]
 
@@ -90,7 +92,9 @@ const Navbar = () => {
         <ListItemIcon className={classes.listedItem}>
           {listItem.listIcon}
         </ListItemIcon>
-        <ListItemText className={classes.listedItem} primary={listItem.listText}/>
+        <ListItemText
+        className={classes.listedItem}
+        primary={listItem.listText}/>
         </ListItem>
         ))}
     </List>
