@@ -25,14 +25,14 @@ const Footer = () => {
   const classes = usedStyles()
   return (
     <BottomNavigation width="auto" style={{ background: "#233"}}>
-      <BottomNavigationAction
+      <BottomNavigationAction target="_blank" href="https://www.linkedin.com/in/kay-hardeman/"
       className={classes.root}
       style={{padding: 0}}
       icon={<LinkedInIcon/>}
       >
       </BottomNavigationAction>
 
-      <BottomNavigationAction
+      <BottomNavigationAction target="_blank" href="https://github.com/kyvycodes"
       className={classes.root}
       style={{padding: 0}}
       icon={<GitHubIcon/>}
